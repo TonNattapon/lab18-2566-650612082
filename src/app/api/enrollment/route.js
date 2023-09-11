@@ -18,7 +18,8 @@ export const GET = async (request) => {
     //read role information from "payload" here (just one line code!)
     //role = ...
     role = payload.role;
-  } catch {
+  } catch (error) {
+    console.log(error);
     return NextResponse.json(
       {
         ok: false,
@@ -62,7 +63,8 @@ export const POST = async (request) => {
     //read role information from "payload" here (just one line code!)
     //role = ...
     role = payload.role;
-  } catch {
+  } catch (error) {
+    console.log(error);
     return NextResponse.json(
       {
         ok: false,
@@ -144,7 +146,8 @@ export const DELETE = async (request) => {
     //read role information from "payload" here (just one line code!)
     //role = ...
     role = payload.role;
-  } catch {
+  } catch (error) {
+    console.log(error);
     return NextResponse.json(
       {
         ok: false,
